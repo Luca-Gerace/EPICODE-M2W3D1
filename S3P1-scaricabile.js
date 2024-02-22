@@ -82,6 +82,15 @@ console.log(upperFirst("topolino pippo pluto paperino"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+    let numbersArray = [];
+    for (let i = 0; i < n; i++) {
+      let number = Math.floor(Math.random() * 11);
+      numbersArray.push(number);
+    }
+    return numbersArray;
+}
+console.log(giveMeRandom(7));
 
 //EXTRA:
 /* ESERCIZIO 1
@@ -89,6 +98,11 @@ console.log(upperFirst("topolino pippo pluto paperino"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function area(l1, l2) {
+    let result = l1 * l2;
+    return result
+}
+console.log(area(5, 10));
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
